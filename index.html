@@ -13,8 +13,8 @@
     <link href="assets/aos/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="/assets/images/icons/icon_192x192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="assets/images/icons/icon_192x192.png">
     <meta name="theme-color" content="#4ca1a3">
 
 
@@ -29,7 +29,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg py-4 py-lg-0 shadow" style="background-color: #F2EFE7;">
         <div class="container px-4">
-            <a href="javascript:void(0)" onclick="fetchHomePage()"><img src="../assets/images/icons/icon.png"
+            <a href="javascript:void(0)" onclick="fetchHomePage()"><img src="assets/images/icons/icon.png"
                     alt="name_logo" width="50px" height="50px"></a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#top-navbar">
@@ -55,7 +55,7 @@
     </nav>
 
     <section class="hero-section d-flex align-items-center text-white"
-        style="min-height: 100vh; background: url('../assets/images/hero.png') no-repeat center center/cover; position: relative;">
+        style="min-height: 100vh; background: url('..assets/images/hero.png') no-repeat center center/cover; position: relative;">
         <!-- Dark Overlay -->
         <div
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 1;">
@@ -259,8 +259,8 @@
     <script>
 
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/static/js/service-worker.js')
-                .then(function (registration) {
+            navigator.serviceWorker.register('static/js/service-worker.js')
+            .then(function (registration) {
                     console.log(' ServiceWorker registered:', registration);
                 })
                 .catch(function (error) {
