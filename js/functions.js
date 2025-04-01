@@ -158,7 +158,7 @@ function scanImage() {
                               </div>`;
 
     // Send the image to the backend for processing
-    fetch("${BACKEND_URL}",apiEndpoint, {
+    fetch(`${BACKEND_URL}$apiEndpoint`, {
         method: "POST",
         body: formData
     })
@@ -202,7 +202,7 @@ function clearResults() {
 // dashboard
 function loadDashboardData() {
     console.log("Fetching dashboard data...");
-    fetch("${BACKEND_URL}/dashboard-data")
+    fetch(`${BACKEND_URL}/dashboard-data`)
         .then(response => response.json())
         .then(data => {
             createChart("dailyChart", data.daily);

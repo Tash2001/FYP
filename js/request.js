@@ -7,7 +7,7 @@ const BACKEND_URL = location.hostname.includes("github.io")
 
 
 function fetchScanPage(){
-    fetch('${BACKEND_URL}/upload')
+    fetch(`${BACKEND_URL}/upload`)
         .then(response=>{
             if(!response.ok){
                 throw new Error("Fail to upload page");
@@ -22,7 +22,7 @@ function fetchScanPage(){
 }
 
 function fetchDashboardPage() {
-    fetch('${BACKEND_URL}/dashboard')
+    fetch(`${BACKEND_URL}/dashboard`)
         .then(response => {
             if (!response.ok) {
                 throw new Error("Failed to load dashboard page");
@@ -44,7 +44,7 @@ function fetchDashboardPage() {
 }
 
 function fetchHomePage(){
-    fetch('${BACKEND_URL}/')
+    fetch(`${BACKEND_URL}/`)
     .then(response=>{
         if(!response.ok){
             throw new Error("Fail to upload page");
